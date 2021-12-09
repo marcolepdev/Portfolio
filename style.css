@@ -11,6 +11,23 @@ html {
   
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+  width:.5em;
+}
+::-webkit-scrollbar-track{
+  background: black;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 100vw;
+  border: .25em solid darkgray;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: darkgray;
+}
+
+
 
 body {
   font-family: 'Lato';
