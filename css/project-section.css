@@ -1,12 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.external-projects-container{
+body{
+  font-family: 'Lato';
+}
+
+nav{
+  height: 70px;
+  width:100%;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+nav ul li{
+  color:#FFFFFF;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+  top:15px;
+  font-size: 30px;
+}
+
+.button-container{
+  height:50px;
+  position: relative;
+  top:80px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button-container{
+  margin-left:20px;
+}
+
+.works-container{
+  width:1400px;
+  height:600px;
+  position: relative;
+  top:100px;
+  margin: 0 auto;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
+}
+
+.single-works {
+  width:200px;
+  height:250px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.56); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.56);
+  padding:5px;
+  
+}
+
+img{
+  width:100px;
+  height:80px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h4, h5 {
+  font-weight: 300px;
   text-align: center;
+}
+
+
+.live-site {
+  padding:10px 10px 10px 10px;
+  width:100px;
+  outline:none;
+  background-color: transparent;
+  border:2px solid #000000;
+  color:#000000;
+  transition: 0.3s;
+  margin: 0 auto;
+  margin-top: 30px;
+  pointer-events: none;
+  cursor: default;
+  opacity:0.6;
+
+}
+
+.live-site:hover{
+  background-color: #000000;
+  border:2px solid black;
+  color:#FFFFFF;
+}
+
+@media only screen and (max-width:415px) {
+  .works-container{
+    width:380px;
+  }
 }
