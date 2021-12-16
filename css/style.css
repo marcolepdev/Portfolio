@@ -249,6 +249,7 @@ box-shadow: 4px -6px 25px 5px rgba(0,0,0,0.45);
     background-color: transparent;
     border:1px solid black;
     transition: 0.3s;
+    color:#000000;
   }
 
   #project-list:hover{
@@ -266,7 +267,7 @@ color:#FFFFFF;
  
     .contact { 
       
-background-color: #000000;
+      background-color: #000000;
       grid-area: contact;
     
     }

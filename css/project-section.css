@@ -9,6 +9,7 @@
 body{
   font-family: 'Lato';
   background-color: #FFFFFF;
+  height:110vh;
 }
 
 ::-webkit-scrollbar{
@@ -65,7 +66,19 @@ nav ul li{
 .button-container{
   height:50px;
   position: relative;
-  top:80px;
+  top:100px;
+}
+
+.main-site{
+  border:2px solid #000000;
+  padding: 10px;
+  color:#000000;
+  transition: 0.3s;
+}
+
+.main-site:hover{
+  background-color: #000000;
+  color:#FFFFFF;
 }
 
 a{
@@ -123,15 +136,27 @@ p{
   font-size: 18px;
 }
 
+.btn-container{
+  width:400px;
+  height:80px;
+  margin: 0 auto;
+  position: relative;
+  top:80px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
 .live-site{
   color:#FFFFFF;
   background-color: #000000;
   position: relative;
-  top:100px;
+  top:10px;
   margin: 0 auto;
-  border:1px solid #FFFFFF;
+  border:2px solid #FFFFFF;
   padding:10px;
   transition: 0.3s;
+  height:45px;
 }
 
 .live-site:hover{
@@ -142,20 +167,29 @@ color:#000000;
 
 
 @media only screen and (max-width:415px) {
+
+  body{
+    height:150vh;
+  }
   .main-site{
 
-    font-size: 25px;
+    font-size: 16px;
     background-color: white;
-    padding:5px;
+    padding:15px;
     border:1px solid black;
     z-index: 100;
+    color: #000;
+  }
 
-
+  .main-site:hover{
+    background-color: #000000;
+    border:2px solid #000000;
+    color:#FFFFFF;
   }
 
   .button-container{
     position: relative;
-    top:100px;
+    top:120px;
   }
   
   .works-container{
@@ -170,6 +204,10 @@ color:#000000;
     top:150px;
   }
 
+  p{
+    font-size: 15px;
+  }
+
   .text-container{
     width:290px;
     height:300px;
@@ -179,12 +217,21 @@ color:#000000;
     
   }
 
+  .btn-container{
+flex-direction: column;
+width:200px;
+height:140px;
+top:45px;
+  }
+
   p{
     margin: 0 auto;
     padding: 15px;
   }
   
-
+.live-site{
+  margin-top: 15px;
+}
 
 
 
