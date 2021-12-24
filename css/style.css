@@ -85,6 +85,10 @@ box-shadow: 4px -6px 25px 5px rgba(0,0,0,0.45);
   a {
     text-decoration: none;
   }
+
+  a:hover{
+    color:#999393;
+  }
   
 
   .welcome {   
@@ -287,6 +291,10 @@ color:#FFFFFF;
 
     .fab, .fas {
       color:#FFFFFF;
+    }
+
+    .fab:hover, .fas:hover{
+      color:#999393;
     }
 
 
