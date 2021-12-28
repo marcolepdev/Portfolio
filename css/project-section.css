@@ -164,6 +164,24 @@ border: 1px solid #000000;
 color:#000000;
 }
 
+.live-site-2{
+  color:#FFFFFF;
+  position: relative;
+  top:10px;
+  margin: 0 auto;
+  border:2px solid #FFFFFF;
+  padding:10px;
+  height:45px;
+   
+  background-color: #000000;
+}
+
+.live-site-2:hover{
+  cursor: not-allowed;
+}
+
+
+
 
 @media only screen and (max-width:415px) {
 
