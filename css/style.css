@@ -41,7 +41,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: 0.2fr 2.5fr 2.2fr 2fr 0.4fr;
+    grid-template-rows: 0.2fr 2.5fr 2.2fr 2fr 2.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -55,7 +55,7 @@ body {
 
    
   .navbar { 
-       z-index: 100;
+      z-index: 100;
       grid-area: navbar;
       display: flex;
       display: -webkit-flex;
@@ -66,7 +66,7 @@ body {
       height:85px;
       width:100%;
       -webkit-box-shadow: 4px -6px 25px 5px rgba(0,0,0,0.45); 
-box-shadow: 4px -6px 25px 5px rgba(0,0,0,0.45);
+      box-shadow: 4px -6px 25px 5px rgba(0,0,0,0.45);
     }
   
     .nav-buttons {
@@ -273,29 +273,85 @@ color:#FFFFFF;
       
       background-color: #000000;
       grid-area: contact;
-    
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
     }
 
-    .social-media-contacts {
+    .contact-title{
       width:300px;
-      height:50px;
-      position: relative;
-      top:30px;
+      height:80px;
       margin: 0 auto;
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      justify-content: space-between;
+      position: relative;
+      top:70px;
     }
 
 
-    .fab, .fas {
-      color:#FFFFFF;
+    #cont-title{
+      color:#fff;
     }
 
-    .fab:hover, .fas:hover{
-      color:#999393;
-    }
+    
+.contact-message{
+  position: relative;
+  top:80px;
+  width:850px;
+  height:80px;
+  margin: 0 auto;
+}
+
+#message{
+  color:#fff;
+  text-align: center;
+  position: relative;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.fas, .fab{
+margin-left: 50%;
+position: relative;
+top:30px;
+color:#fff;
+transition: .3s;
+
+}
+
+
+.fas:hover, .fab:hover{
+  color:red;
+}
+
+#messageTwo{
+
+  color:#fff;
+  text-align: center;
+  position: relative;
+  top:60px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 25px;
+  font-size: 18px;
+
+}
+
+.linkedin-and-github-container{
+  margin: 0 auto;
+  width:300px;
+  height:100px;
+  position: relative;
+  top:100px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
+    
 
 
 
@@ -309,11 +365,11 @@ color:#FFFFFF;
 
 
  
-  @media only screen and (max-width: 415px){
+  @media only screen and (max-width: 520px){
     .container {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 3fr 2fr 0.2fr 0.1;
+      grid-template-rows: 0.2fr 3fr 2fr 0.2fr 0.2fr;
       gap: 0px 0px;
       grid-auto-flow: row;
       grid-template-areas:
@@ -506,14 +562,24 @@ grid-area: contact;
 background-color: #000000;
 position: absolute;
 top:1800px;
-height:15vh;;
+height:60vh;
 width:100%;
 }
 
+.contact-title{
+  position: relative;
+  top:80px;
+}
 
 
+.contact-message{
+  width:100%;
+}
 
-
+#message, #messageTwo{
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+}
 
 
 
